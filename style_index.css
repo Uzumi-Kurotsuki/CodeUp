@@ -1,0 +1,365 @@
+/* CSS extracted from index.php */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to top, #001f3f, #0074D9);
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url('../photos/pixelart mario wallpaper video.gif') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, #000c1f 0%, transparent 50%);
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2em;
+  color: #86a72c;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  font-size: 0.8em;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+
+.btn-start {
+  padding: 15px 30px;
+  background-color: #86a72c;
+  color: #000;
+  border: none;
+  font-size: 0.9em;
+  cursor: pointer;
+  box-shadow: 3px 3px #444;
+  transition: transform 0.2s;
+}
+
+.btn-start:hover {
+  transform: translateY(-3px);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #000;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+nav .nav-left, nav .nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .nav-left a, nav .nav-right a {
+  color: #86a72c;
+  text-decoration: none;
+  font-size: 0.75em;
+  text-shadow: 1px 1px #000;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #86a72c;
+  transform: scale(1.1);
+}
+
+.profile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url('photos/Pixel1.gif');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #86a72c;
+  cursor: pointer;
+}
+
+.btn-logout, .btn-profile {
+  background-color: #86a72c;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.75em;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 2px 2px #444;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-logout:hover, .btn-profile:hover {
+  background-color: #86a72c;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #86a72c;
+}
+
+.courses-container {
+  padding: 100px 20px 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background-color: #001f3f;
+}
+
+.course-card {
+  width: 340px;
+  background-color: #003366;
+  padding: 35px 30px 40px;
+  color: #FFF;
+  border: 8px solid #000;
+  background-image: linear-gradient(#003366, #002244);
+  box-shadow: inset -4px -4px #86a72c, inset 4px 4px #86a72c, 6px 6px #000;
+  text-align: left;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h2 {
+  color: #86a72c;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.level {
+  font-size: 0.75em;
+  color: #7FDBFF;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 4px solid #FFD700;
+  box-shadow: 0 0 0 4px #000;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .btn-start {
+    font-size: 0.75em;
+    padding: 10px 20px;
+  }
+
+  .course-card {
+    width: 90%;
+  }
+
+  nav {
+    padding: 15px 20px;
+  }
+}
+
+footer div p {
+  margin-bottom: 10px;
+}
+#toggle-music img {
+  filter: drop-shadow(2px 2px 2px #000);
+  transition: transform 0.2s;
+}
+
+#toggle-music img:hover {
+  transform: scale(1.1);
+}
+
+#star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: yellow;
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Parallax Awan & Bulan */
+.parallax-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+.parallax {
+  position: absolute;
+  will-change: transform;
+}
+.moon {
+  top: 30px;
+  left: 50%;
+  width: 300px; /* Dulu 150px */
+  transform: translateX(-50%);
+  opacity: 0.9;
+}
+
+.cloud1 {
+  top: 120px;
+  left: 5%;
+  width: 400px; /* Dulu 200px */
+  opacity: 0.8;
+}
+
+.cloud2 {
+  top: 170px;
+  right: 5%;
+  width: 380px; /* Dulu 180px */
+  opacity: 0.8;
+}
+
+.cloud3 {
+  top: 60px;
+  left: 15%;
+  width: 300px;
+  opacity: 0.7;
+}
+
+.cloud4 {
+  top: 220px;
+  right: 15%;
+  width: 320px;
+  opacity: 0.7;
+}
+.cloud5 {
+  width: 250px; /* Besarin */
+  position: absolute;
+  bottom: 80px; /* Naikin supaya lebih kelihatan */
+  left: 5%;
+}
+
+.cloud6 {
+  width: 250px;
+  position: absolute;
+  bottom: 80px;
+  right: 5%;
+}
+
+.cloud7 {
+  width: 200px; /* Lebih gedean dikit dari sebelumnya */
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}
+.moon, .cloud1, .cloud2, .cloud3, .cloud4, .cloud5, .cloud6, .cloud7 {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Additional CSS from index.php body style block */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  border-bottom: 2px solid #00f;
+}
+
+.nav-left a,
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #0ff;
+}
+
+.nav-left {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-logout {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-logo {
+  width: 40px;
+  height: 40px;
+  background-image: url('photos/default-avatar.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
