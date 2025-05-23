@@ -10,7 +10,7 @@ require 'db.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <title>CodeUp</title>
-  <link rel="stylesheet" href="style/style_index.css" />
+  <link rel="stylesheet" href="style_index.css" />
 </head>
 <body>
   <audio id="bg-music" loop style="display:none;">
